@@ -61,9 +61,6 @@ $(document).ready(() => {
 const sonic = $('.sonic');
 
 
-$(document).ready(function () {
-    if (sonic.length) {
-
         let isJumping = false;
 
         // Função para fazer o Sonic pular
@@ -119,9 +116,4 @@ $(document).ready(function () {
 
 
 
-
-    } else {
-        console.log('Elemento .sonic não encontrado');
-    }
-});
 

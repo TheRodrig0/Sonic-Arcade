@@ -1,0 +1,17 @@
+.sonic {
+    position: absolute;
+    display: none;
+    
+    
+    background-image: url(../images/characters/sonic/sonic.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    left: 38%;
+    transform: -50%;
+    bottom: 17%;
+    width: 15%;
+    height: 20%;
+    z-index: 1;
+}

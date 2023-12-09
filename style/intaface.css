@@ -1,0 +1,110 @@
+/* Reset de margens e preenchimentos */
+body {
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  
+  /* JOGO */
+  .game {
+    position: absolute;
+  
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  
+  }
+  
+  
+  /* TELA HOME */
+  
+  .home {
+    position: absolute;
+  
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  
+  }
+  
+  .home::after {
+    content: '';
+    position: absolute;
+  
+    background-image: url(../imagens/interface/tela_inicial.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    height: 85%;
+    width: 100%;
+  
+  }
+  
+  .textHome {
+    position: absolute;
+    
+    text-align: center;
+    
+    bottom: 7.5%;
+    left: 35%;
+    transform: translate(-50%);
+    width: 70%;
+    height: auto;
+    
+  }
+  
+  .textHome::before{
+    content: 'CLIQUE PARA PROSSEGUIR';
+    position: absolute;
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    font-style: oblique;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  
+    bottom: 7.5%;
+    z-index: 10;
+  
+    animation: textHomePiscar 1s  infinite;
+  }
+  
+  @keyframes textHomePiscar {
+    0%, 100%{
+      opacity: 0.5;
+    }
+  
+    50%{
+      opacity: 1;
+    }
+  }
+  
+  
+  .home::before {
+    content: '';
+    position: absolute;
+  
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  
+    animation: aparecerHome 5s;
+  }
+  
+  
+  @keyframes aparecerHome {
+    0% {
+      background-color: black;
+    }
+  
+    90% {
+      background-color: white;
+    }
+  
+    100% {
+      background-color: none;
+    }
+  }
